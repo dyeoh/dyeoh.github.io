@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: 'Lato',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Alte';
+  src: url('./fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+};
+
+@font-face {
+  font-family: 'Alte';
+  src: url('./fonts/AlteHaasGroteskBold.ttf') format('truetype');
+  font-weight: bold;
+};
+
+@font-face {
+  font-family: 'Lato';
+  src:url('./fonts/Lato-Regular.ttf') format('truetype');
+};
+
+@font-face {
+  font-family: 'Lato';
+  src:url('./fonts/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+};
