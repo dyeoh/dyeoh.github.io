@@ -16,7 +16,7 @@ export const ResumeCanvas: React.FC<IProps> = (props) => {
       bgColor="rgb(250, 255, 255)"
       boxShadow="0 3px 8px -3px rgba(0, 0, 0, 0.7)"
     >
-      <title>Darren</title>
+      <title>Darren Yeoh | Developer</title>
       <Box
         height="100%"
         // padding="0.3in">
