@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Darren Yeoh",
   },
-  plugins:["@chakra-ui/gatsby-plugin"]
+  plugins: ["@chakra-ui/gatsby-plugin"],
 };
