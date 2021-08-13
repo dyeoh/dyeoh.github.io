@@ -1,0 +1,13 @@
+{
+  "name": "dyeoh.github.io",
+  "packageManager": "yarn@3.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependenciesMeta": {
+    "gatsby-plugin-styled-components@4.11.0": {
+      "unplugged": true
+    }
+  }
+}
