@@ -1,5 +1,5 @@
 {
-  "name": "darren-yeoh",
+  "name": "dyeoh",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@chakra-ui/react": "^1.6.6",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "babel-plugin-styled-components": "^1.13.2",
-    "gatsby": "^3.11.1",
+    "framer-motion": "^4.1.17",
+    "gatsby": "2.31.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.0"
@@ -19,6 +24,7 @@
   "devDependencies": {
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.12"
+    "@types/styled-components": "^5.1.12",
+    "react-is": "^17.0.2"
   }
 }
