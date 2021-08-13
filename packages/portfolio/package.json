@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.3.0",
     "babel-plugin-styled-components": "^1.13.2",
     "framer-motion": "^4.1.17",
-    "gatsby": "2.31.0",
+    "gatsby": "3.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.0"
