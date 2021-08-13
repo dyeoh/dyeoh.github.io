@@ -2439,6 +2439,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dyeoh/eslint-config@workspace:*, @dyeoh/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@dyeoh/eslint-config@workspace:packages/eslint-config"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^4.17.0
+    "@typescript-eslint/parser": ^4.17.0
+    eslint: ^7.27.0
+    eslint-config-prettier: ^8.1.0
+    eslint-plugin-import: ^2.23.4
+    eslint-plugin-prettier: ^3.4.0
+    eslint-plugin-simple-import-sort: ^5.0.3
+    prettier: ^2.3.0
+  peerDependencies:
+    eslint: ">= 3"
+  languageName: unknown
+  linkType: soft
+
 "@emotion/babel-plugin@npm:^11.3.0":
   version: 11.3.0
   resolution: "@emotion/babel-plugin@npm:11.3.0"
@@ -3428,6 +3445,13 @@ __metadata:
     estree-walker: ^2.0.1
     picomatch: ^2.2.2
   checksum: 405f681c7d32661980aa3caa928ff22e1c06f0e081db1550e6ab9c179dc9d3d8d63c05dcc7338fe65ab3f856a56c465696a51300b83e98171956fcb141106e39
+  languageName: node
+  linkType: hard
+
+"@rushstack/eslint-patch@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@rushstack/eslint-patch@npm:1.0.6"
+  checksum: fbecc15d7e95186622514d86f566082f1f6d04c30d93830bffe154fd699780f32120bbbce2efb919658696af01c58f0e02e580941ede8eee8cc9b007637b639c
   languageName: node
   linkType: hard
 
@@ -5133,7 +5157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.15.2":
+"@typescript-eslint/eslint-plugin@npm:^4.15.2, @typescript-eslint/eslint-plugin@npm:^4.17.0":
   version: 4.29.1
   resolution: "@typescript-eslint/eslint-plugin@npm:4.29.1"
   dependencies:
@@ -5170,7 +5194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.15.2":
+"@typescript-eslint/parser@npm:^4.15.2, @typescript-eslint/parser@npm:^4.17.0":
   version: 4.29.1
   resolution: "@typescript-eslint/parser@npm:4.29.1"
   dependencies:
@@ -9045,6 +9069,10 @@ __metadata:
 "dyeoh.github.io@workspace:.":
   version: 0.0.0-use.local
   resolution: "dyeoh.github.io@workspace:."
+  dependencies:
+    eslint: ^7.32.0
+    prettier: ^2.3.2
+    typescript: ^4.3.5
   languageName: unknown
   linkType: soft
 
@@ -9054,8 +9082,10 @@ __metadata:
   dependencies:
     "@chakra-ui/gatsby-plugin": ^2.0.1
     "@chakra-ui/react": ^1.6.6
+    "@dyeoh/eslint-config": "workspace:*"
     "@emotion/react": ^11.4.1
     "@emotion/styled": ^11.3.0
+    "@rushstack/eslint-patch": ^1.0.6
     "@types/react": ^17.0.17
     "@types/react-dom": ^17.0.9
     "@types/styled-components": ^5.1.12
@@ -9515,6 +9545,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^8.1.0":
+  version: 8.3.0
+  resolution: "eslint-config-prettier@npm:8.3.0"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
+  languageName: node
+  linkType: hard
+
 "eslint-config-react-app@npm:^6.0.0":
   version: 6.0.0
   resolution: "eslint-config-react-app@npm:6.0.0"
@@ -9587,7 +9628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.1":
+"eslint-plugin-import@npm:^2.22.1, eslint-plugin-import@npm:^2.23.4":
   version: 2.24.0
   resolution: "eslint-plugin-import@npm:2.24.0"
   dependencies:
@@ -9633,6 +9674,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-prettier@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "eslint-plugin-prettier@npm:3.4.0"
+  dependencies:
+    prettier-linter-helpers: ^1.0.0
+  peerDependencies:
+    eslint: ">=5.0.0"
+    prettier: ">=1.13.0"
+  peerDependenciesMeta:
+    eslint-config-prettier:
+      optional: true
+  checksum: 30a07e8d12637d2988e371f6a20ff4c86fd7fdc3596d1d18d62c0367804f38e06a65052d0281234aeb2552e4d1908dcb2de20543413e038251a2717a46400a9d
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-react-hooks@npm:^4.2.0":
   version: 4.2.0
   resolution: "eslint-plugin-react-hooks@npm:4.2.0"
@@ -9661,6 +9717,15 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
   checksum: bf844f98d93f3617fbd03df4be4f4c9e8e49ea035678762b73a28df730e9518d5ac636293f6326b41b4a0678f9dfa059ce559f6652c7a2d914d477ec3a389619
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-simple-import-sort@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "eslint-plugin-simple-import-sort@npm:5.0.3"
+  peerDependencies:
+    eslint: ">=5.0.0"
+  checksum: 51d62b5f709aafd5e301cb709753d90e4fb11ac97bdd480f578282a2fe90704f3618294864a9e8585f7803b39d12adfbc6fe3e5b271ddc42ab9aa48585401736
   languageName: node
   linkType: hard
 
@@ -9735,7 +9800,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.20.0":
+"eslint@npm:^7.20.0, eslint@npm:^7.27.0, eslint@npm:^7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -10173,6 +10238,13 @@ __metadata:
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
   checksum: e21a9d8d84f53493b6aa15efc9cfd53dd5b714a1f23f67fb5dc8f574af80df889b3bce25dc081887c6d25457cce704e636395333abad896ccdec03abaf1f3f9d
+  languageName: node
+  linkType: hard
+
+"fast-diff@npm:^1.1.2":
+  version: 1.2.0
+  resolution: "fast-diff@npm:1.2.0"
+  checksum: 1b5306eaa9e826564d9e5ffcd6ebd881eb5f770b3f977fcbf38f05c824e42172b53c79920e8429c54eb742ce15a0caf268b0fdd5b38f6de52234c4a8368131ae
   languageName: node
   linkType: hard
 
@@ -16983,7 +17055,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier-linter-helpers@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "prettier-linter-helpers@npm:1.0.0"
+  dependencies:
+    fast-diff: ^1.1.2
+  checksum: 00ce8011cf6430158d27f9c92cfea0a7699405633f7f1d4a45f07e21bf78e99895911cbcdc3853db3a824201a7c745bd49bfea8abd5fb9883e765a90f74f8392
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.3.0, prettier@npm:^2.3.2":
   version: 2.3.2
   resolution: "prettier@npm:2.3.2"
   bin:
