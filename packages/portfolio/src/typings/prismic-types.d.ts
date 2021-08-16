@@ -19,7 +19,7 @@ interface PrismicContacts {
   nodes: PrismicContact[];
 }
 
-interface PrismicEducation {
+interface PrismicTimeline {
   data: {
     order: number;
     heading: PrismicRichText;
@@ -27,10 +27,6 @@ interface PrismicEducation {
     start: PrismicRichText;
     end: PrismicRichText;
   };
-}
-
-interface PrismicEducationList {
-  nodes: PrismicEducation[];
 }
 
 interface PrismicAboutMe {
