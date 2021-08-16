@@ -13,6 +13,10 @@ export const ResumeCanvas: React.FC<IProps> = (props) => {
       boxSizing="border-box"
       w="8.5in"
       h="12in"
+      sx={{
+        WebkitPrintColorAdjust: "exact",
+        WebkitFilter: "opacity(1)",
+      }}
       bgColor="rgb(250, 255, 255)"
       boxShadow="0 3px 8px -3px rgba(0, 0, 0, 0.7)"
     >
@@ -25,8 +29,4 @@ export const ResumeCanvas: React.FC<IProps> = (props) => {
       </Box>
     </Box>
   );
-};
-
-const layout = () => {
-  return;
 };

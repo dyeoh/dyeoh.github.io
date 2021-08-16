@@ -2,12 +2,29 @@ import { extendTheme } from "@chakra-ui/react";
 
 const Text = {
   variants: {
-    H1A: {
-      fontFamily: "Lato",
-      fontSize: "30px",
-      fontWeight: 400,
-      lineHeight: "34px",
+    H1: {
+      fontFamily: "Alte",
+      fontSize: "36px",
+      fontWeight: "bold",
       letterSpacing: 0,
+    },
+    H2: {
+      fontFamily: "Alte",
+      fontSize: "28px",
+      letterSpacing: 0,
+    },
+    title: {
+      fontFamily: "Alte",
+      fontSize: "24px",
+      fontWeight: "bold",
+    },
+    body: {
+      fontFamily: "Alte",
+      fontSize: "15px",
+    },
+    bodySm: {
+      fontFamily: "Alte",
+      fontSize: "12px",
     },
   },
 };
