@@ -45,25 +45,20 @@ interface ResumePageData {
   };
 }
 
+const sortTimeline = (a: PrismicTimeline, b: PrismicTimeline) => {
+  if (!a || !b) return 0;
+  if (a.data.order < b.data.order) return -1;
+  return 1;
+};
+
 const ResumePage: React.FC<ResumePageData> = (props) => {
   const { data } = props;
   const aboutMe = data?.prismicAboutMe;
   const contactList = data?.allPrismicContact?.nodes;
-  const allPrismicEducation = data?.allPrismicEducation?.nodes?.sort(
-    (a: PrismicTimeline, b: PrismicTimeline) => {
-      if (!a || !b) return 0;
-      if (a.data.order < b.data.order) return -1;
-      return 1;
-    }
-  );
-  const allPrismicExperience = data?.allPrismicExperience?.nodes?.sort(
-    (a: PrismicTimeline, b: PrismicTimeline) => {
-      if (!a || !b) return 0;
-      if (a.data.order < b.data.order) return -1;
-      return 1;
-    }
-  );
-  console.log(data);
+  const allPrismicEducation =
+    data?.allPrismicEducation?.nodes?.sort(sortTimeline);
+  const allPrismicExperience =
+    data?.allPrismicExperience?.nodes?.sort(sortTimeline);
 
   return (
     <ResumeCanvas>
@@ -179,43 +174,43 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     TypeScript/JavaScript
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={85} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={87} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     HTML5
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={89} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={90} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     CSS
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={73} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={83} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Node.js
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={70} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={73} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Java
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={60} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={65} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     SQL
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={55} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={62} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Solidity
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={40} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={50} />
                 </Flex>
                 <Text variant="title" color="primaryOrange" mt="8px">
                   others
@@ -223,10 +218,10 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 <Text variant="bodySm" color="white" w="100%" opacity={0.8}>
                   <b>Technical skills/ frameworks/ languages:</b> Yarn2
                   (workspace monorepo + regular), npm, git, Gatsby.js, React.js,
-                  Storybook.js, GraphQL, C, Python
+                  Storybook.js, GraphQL, C, C#, Python, Unity
                   <br />
-                  <b>Soft skills:</b> Excellent verbal and oral skills, fast
-                  learner, photography
+                  <b>Soft skills:</b> Excellent verbal and written communication
+                  skills, fast learner
                   <br />
                   <b>Cloud Platforms:</b> SAP Cloud Platform, AWS, Google Cloud
                 </Text>
@@ -250,12 +245,13 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 JULY 2021 – PRESENT
               </Text>
               <Text variant="bodySm" color="white" opacity={0.8}>
-                RMIT University final capstone project. An NFT marketplace on
-                Ethereum based chains. Currently investigating layer 2 solutions
-                for lower transaction costs. React.js, AWS Lambda functions,
-                Amazon RDS. Smart contracts forked off templates and written in
-                Solidity. Metamask extension is used to sign and login to
-                application.
+                RMIT University final capstone project. An NFT marketplace built
+                on Ethereum based chains. Currently investigating layer 2
+                solutions (Immutable X, Polygon e.g.) for lower transaction
+                costs. Tech stack include React.js, AWS Lambda, AWS API Gateway,
+                Amazon RDS. Smart contracts were forked off templates and
+                written in Solidity. Metamask browser extension used to handle
+                authentication in browser.
               </Text>
               <Text
                 variant="bodySm"
@@ -270,14 +266,14 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 JULY 2020 – NOVEMBER 2020
               </Text>
               <Text variant="bodySm" color="white" opacity={0.8}>
-                A university project where a Unity game was implemented where
-                enemies and allies demonstrate pathfinding,flocking and steering
-                behaviours such as obstacle avoidance, pursuit and evasion.
-                Makes use of the concept of Boids and pathfinding algorithms. In
-                the second iteration, all the entities within the game are AI
-                controlled. The Unity Machine Learning Agents toolkit was used
-                to teach the agents through reinforcement learning in parallel
-                simulations and the observations were recorded.
+                A team project where a Unity game was implemented with different
+                entities with state machines in order to simulate a prey and
+                predator scenario. Pathfinding, flocking and steering behaviours
+                using the concept of Boids was implemented in the first
+                iteration. Player controlled units were removed and the Unity
+                Machine Learning Agents toolkit was used in the second iteration
+                to teach the agents through reinforcement learning through
+                parallel simulations.
               </Text>
               <Text
                 variant="bodySm"

@@ -14,7 +14,6 @@ interface TimelineIProps {
 
 export const Timeline: React.FC<TimelineIProps> = (props) => {
   const { items } = props;
-  console.log(items);
   return (
     <UnorderedList position="relative" h="100%">
       <Box
