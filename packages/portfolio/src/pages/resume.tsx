@@ -216,9 +216,10 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   others
                 </Text>
                 <Text variant="bodySm" color="white" w="100%" opacity={0.8}>
-                  <b>Technical skills/ frameworks/ languages:</b> Yarn2
+                  <b>Other Technical skills/ frameworks/ languages:</b> Yarn2
                   (workspace monorepo + regular), npm, git, Gatsby.js, React.js,
-                  Storybook.js, GraphQL, C, C#, Python, Unity
+                  Storybook.js, GraphQL, C, C#, Python, Unity, Solidity,
+                  Serverless Framework
                   <br />
                   <b>Soft skills:</b> Excellent verbal and written communication
                   skills, fast learner
@@ -246,12 +247,11 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
               </Text>
               <Text variant="bodySm" color="white" opacity={0.8}>
                 RMIT University final capstone project. An NFT marketplace built
-                on Ethereum based chains. Currently investigating layer 2
-                solutions (Immutable X, Polygon e.g.) for lower transaction
-                costs. Tech stack include React.js, AWS Lambda, AWS API Gateway,
-                Amazon RDS. Smart contracts were forked off templates and
-                written in Solidity. Metamask browser extension used to handle
-                authentication in browser.
+                on ImmutableX to solve the issues around high gas costs on the
+                Ethereum mainnet. Tech stack built with/written in React.js,
+                Serverless, AWS Lambda, AWS API Gateway, Amazon RDS, Python,
+                TypeScript, Node. Smart contracts were forked off OpenZeppelin
+                and written in Solidity.
               </Text>
               <Text
                 variant="bodySm"
