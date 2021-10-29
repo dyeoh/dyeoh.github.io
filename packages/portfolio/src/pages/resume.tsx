@@ -142,12 +142,12 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 {...BlueCardBoxStyle}
                 w="48%"
                 px="16px"
-                pt="8px"
+                py="8px"
               >
                 <Text variant="title" color="primaryOrange">
                   education
                 </Text>
-                <Box h="100%" p="16px">
+                <Box h="100%" px="16px">
                   <Timeline items={allPrismicEducation.map((e) => e.data)} />
                 </Box>
               </Flex>
@@ -156,13 +156,13 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 {...BlueCardBoxStyle}
                 h="100%"
                 px="16px"
-                pt="8px"
+                py="10px"
                 w="48%"
               >
                 <Text variant="title" color="primaryOrange">
                   experience
                 </Text>
-                <Box h="100%" p="16px">
+                <Box h="100%" px="16px">
                   <Timeline items={allPrismicExperience?.map((e) => e.data)} />
                 </Box>
               </Flex>
