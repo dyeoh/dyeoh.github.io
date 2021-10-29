@@ -16,5 +16,8 @@
     "commitizen": {
       "path": "cz-lerna-changelog"
     }
+  },
+  "scripts": {
+    "start": "yarn workspace dyeoh start"
   }
 }

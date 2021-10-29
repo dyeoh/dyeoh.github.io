@@ -13,7 +13,8 @@ interface ContactDetailsProps {
 }
 
 const BlueCardBoxStyle = {
-  m: "16px",
+  mt: "8px",
+  mx: "16px",
   boxShadow: "2xl",
   bg: "primaryDarkBlue",
   h: "100%",
@@ -128,19 +129,20 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
           </Flex>
         </Flex>
         {/*Division 2*/}
-        <Flex w="100%" flex={1} h="100%" boxShadow="2xl" bg="#1a237e">
+        <Flex w="100%" flex={1} h="100%" boxShadow="2xl" bg="#1a237e" pb="8px">
           <Flex
             h="100%"
             w="100%"
             flexDirection="column"
             justifyContent="space-between"
           >
-            <Flex w="100%" height="29%" justifyContent="space-between">
+            <Flex w="100%" height="25%" justifyContent="space-between">
               <Flex
                 flexDirection="column"
                 {...BlueCardBoxStyle}
                 w="48%"
-                p="16px"
+                px="16px"
+                pt="8px"
               >
                 <Text variant="title" color="primaryOrange">
                   education
@@ -153,7 +155,8 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 flexDirection="column"
                 {...BlueCardBoxStyle}
                 h="100%"
-                padding="16px"
+                px="16px"
+                pt="8px"
                 w="48%"
               >
                 <Text variant="title" color="primaryOrange">
@@ -165,8 +168,8 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
               </Flex>
             </Flex>
             <Flex h="12px" />
-            <Flex w="100%" height="29%" justifyContent="center">
-              <Box p="16px" {...BlueCardBoxStyle} w="95%">
+            <Flex w="100%" height="30%" justifyContent="center">
+              <Box pt="4px" px="16px" {...BlueCardBoxStyle} w="95%">
                 <Text variant="title" color="primaryOrange" mb="8px">
                   programming / technical skills
                 </Text>
@@ -212,7 +215,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   </Text>
                   <Progress w="70%" colorScheme="orange" size="xs" value={50} />
                 </Flex>
-                <Text variant="title" color="primaryOrange" mt="8px">
+                <Text variant="title" color="primaryOrange" mt="4px">
                   others
                 </Text>
                 <Text variant="bodySm" color="white" w="100%" opacity={0.8}>
@@ -225,11 +228,18 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   skills, fast learner
                   <br />
                   <b>Cloud Platforms:</b> SAP Cloud Platform, AWS, Google Cloud
+                  <br />
+                  <b>Certifications:</b>{" "}
+                  <li>
+                    BSB40215 Certificate IV in Business (Navitas Professional)
+                  </li>
+                  <li>Pearson Test of English (Overall Score of 90)</li>
+                  <br />
                 </Text>
               </Box>
             </Flex>
             <Flex h="12px" />
-            <Box p="16px" {...BlueCardBoxStyle} flex={1}>
+            <Box pt="4px" px="16px" {...BlueCardBoxStyle} flex={1}>
               <Text variant="title" color="primaryOrange" w="100%" mb="4px">
                 notable projects
               </Text>
@@ -252,6 +262,24 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 Serverless, AWS Lambda, AWS API Gateway, Amazon RDS, Python,
                 TypeScript, Node. Smart contracts were forked off OpenZeppelin
                 and written in Solidity.
+              </Text>
+              <Text
+                variant="bodySm"
+                fontWeight="bold"
+                color="white"
+                opacity={0.8}
+                mt="8px"
+              >
+                Lion Corporate B2B Web Portal
+              </Text>
+              <Text variant="bodySm" color="primaryOrange" opacity={0.9}>
+                JULY 2021 – PRESENT
+              </Text>
+              <Text variant="bodySm" color="white" opacity={0.8}>
+                Technical lead for front end development. Tasked with setting up
+                framework, deployment pipelines on AWS Amplify and integration
+                with backend APIs. Front end written in React.js and TypeScript
+                and project set up as a monorepo using yarn2 workspace.
               </Text>
               <Text
                 variant="bodySm"
@@ -288,8 +316,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 MAY 2017 – JUNE 2017
               </Text>
               <Text variant="bodySm" color="white" opacity={0.8}>
-                An individual university assignment with the objective of
-                implementing a multi-threaded server-based proof of work solver
+                Implemented a multi-threaded server-based proof of work solver
                 written in C together with the functions in the Simple Stratum
                 Text Protocol (SSTP). POSIX thread libraries used to handle
                 multi-threading.
