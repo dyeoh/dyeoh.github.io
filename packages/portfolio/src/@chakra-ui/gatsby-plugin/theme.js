@@ -15,7 +15,7 @@ const Text = {
     },
     title: {
       fontFamily: "Alte",
-      fontSize: "24px",
+      fontSize: "18px",
       fontWeight: "bold",
     },
     body: {
