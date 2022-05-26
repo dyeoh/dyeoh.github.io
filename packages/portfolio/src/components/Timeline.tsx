@@ -18,10 +18,10 @@ export const Timeline: React.FC<TimelineIProps> = (props) => {
     <UnorderedList position="relative" h="100%">
       <Box
         position="absolute"
-        ml="-5"
+        ml="-1.5rem"
         w="10px"
         h="100%"
-        borderRight="1.5px solid white"
+        borderRight="2px solid white"
       />
       <Flex flexDirection="column" h="90%" justifyContent="space-between">
         {items?.map((val: ListItemType, index: number) => (
