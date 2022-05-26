@@ -100,13 +100,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
           <Flex boxShadow="dark-lg" h="2%" bg="primaryDarkBlue" />
           <Flex boxShadow="dark-lg" flex={1} bg="primaryBlue">
             <Box p="16px">
-              <Text variant={"title"} color="primaryOrange">
-                {aboutMe?.data?.title?.text}
-              </Text>
-              <Text variant="body" color="white" opacity={0.8}>
-                {aboutMe?.data?.body?.text}
-              </Text>
-              <Text variant="title" color="primaryOrange" mt="16px" mb="16px">
+              <Text variant="title" color="primaryOrange" mb="16px" >
                 contact me
               </Text>
               <Flex
@@ -125,6 +119,12 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   );
                 })}
               </Flex>
+              <Text variant={"title"} color="primaryOrange" my="16px" >
+                {aboutMe?.data?.title?.text}
+              </Text>
+              <Text variant="body" color="white" opacity={0.8}>
+                {aboutMe?.data?.body?.text}
+              </Text>
             </Box>
           </Flex>
         </Flex>
