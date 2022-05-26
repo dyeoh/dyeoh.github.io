@@ -168,16 +168,16 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
               </Flex>
             </Flex>
             <Flex h="12px" />
-            <Flex w="100%" height="30%" justifyContent="center">
+            <Flex w="100%" height="35%" justifyContent="center">
               <Box pt="4px" px="16px" {...BlueCardBoxStyle} w="95%">
                 <Text variant="title" color="primaryOrange" mb="8px">
-                  programming / technical skills
+                  main programming / technical skills
                 </Text>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     TypeScript/JavaScript
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={87} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={90} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
@@ -187,15 +187,15 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
-                    CSS
+                    Node.js
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={83} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={77} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
-                    Node.js
+                    CSS
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={73} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={65} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
@@ -207,33 +207,37 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     SQL
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={62} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={60} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Solidity
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={50} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={55} />
                 </Flex>
                 <Text variant="title" color="primaryOrange" mt="4px">
                   others
                 </Text>
                 <Text variant="bodySm" color="white" w="100%" opacity={0.8}>
-                  <b>Other Technical skills/ frameworks/ languages:</b> Yarn2
-                  (workspace monorepo + regular), npm, git, Gatsby.js, React.js,
+                  <b>Other Technical skills/ frameworks/ languages:</b> Yarn2, npm, git, 
+                  Next.js, Gatsby.js, React.js,
                   Storybook.js, GraphQL, C, C#, Python, Unity, Solidity,
-                  Serverless Framework
+                  Serverless.js Framework
+                  <br />
+                  <b>Testing:</b> Jest, React Testing Library, Cypress
+                  <br />
+                  <b>CI/CD and Automation:</b> Bitbucket Pipelines, AWS Amplify, Drone CI
                   <br />
                   <b>Soft skills:</b> Excellent verbal and written communication
-                  skills, fast learner
+                  skills, fast learner and good problem solver
                   <br />
-                  <b>Cloud Platforms:</b> SAP Cloud Platform, AWS, Google Cloud
+                  <b>Cloud Platforms:</b> SAP Cloud Platform, AWS, Azure
                   <br />
-                  <b>Certifications:</b>{" "}
-                  <li>
-                    BSB40215 Certificate IV in Business (Navitas Professional)
-                  </li>
-                  <li>Pearson Test of English (Overall Score of 90)</li>
+                  <b>Certifications:</b>
+                    <br/>
+                    - BSB40215 Certificate IV in Business (Navitas Professional)
+                    <br/>
+                    -Pearson Test of English (Overall Score of 90)
                   <br />
                 </Text>
               </Box>
@@ -241,7 +245,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
             <Flex h="12px" />
             <Box pt="4px" px="16px" {...BlueCardBoxStyle} flex={1}>
               <Text variant="title" color="primaryOrange" w="100%" mb="4px">
-                notable projects
+                notable side projects
               </Text>
               <Text
                 variant="bodySm"
@@ -253,33 +257,15 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                 Web 3.0 Application - NFT Marketplace for Music Artists
               </Text>
               <Text variant="bodySm" color="primaryOrange" opacity={0.9}>
-                JULY 2021 – PRESENT
+                JULY 2021 – DECEMBER 2021
               </Text>
               <Text variant="bodySm" color="white" opacity={0.8}>
-                RMIT University final capstone project. An NFT marketplace built
-                on ImmutableX to solve the issues around high gas costs on the
-                Ethereum mainnet. Tech stack built with/written in React.js,
-                Serverless, AWS Lambda, AWS API Gateway, Amazon RDS, Python,
+                Final capstone project at RMIT University. An NFT marketplace built
+                on ImmutableX which is a Layer 2 solution which aims to solve issues around high gas costs 
+                and scalability on the Ethereum mainnet. Tech stack built with/written in React.js (CRA Framework),
+                Serverless, AWS Lambda, AWS API Gateway, Amazon RDS (Sqlite), Python,
                 TypeScript, Node. Smart contracts were forked off OpenZeppelin
                 and written in Solidity.
-              </Text>
-              <Text
-                variant="bodySm"
-                fontWeight="bold"
-                color="white"
-                opacity={0.8}
-                mt="8px"
-              >
-                Lion Corporate B2B Web Portal
-              </Text>
-              <Text variant="bodySm" color="primaryOrange" opacity={0.9}>
-                JULY 2021 – PRESENT
-              </Text>
-              <Text variant="bodySm" color="white" opacity={0.8}>
-                Technical lead for front end development. Tasked with setting up
-                framework, deployment pipelines on AWS Amplify and integration
-                with backend APIs. Front end written in React.js and TypeScript
-                and project set up as a monorepo using yarn2 workspace.
               </Text>
               <Text
                 variant="bodySm"
