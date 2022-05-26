@@ -235,9 +235,9 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   <br />
                   <b>Certifications:</b>
                     <br/>
-                    -BSB40215 Certificate IV in Business (Navitas Professional)
+                    - BSB40215 Certificate IV in Business (Navitas Professional)
                     <br/>
-                    -Pearson Test of English (Overall Score of 90)
+                    - Pearson Test of English (Overall Score of 90)
                   <br />
                 </Text>
               </Box>

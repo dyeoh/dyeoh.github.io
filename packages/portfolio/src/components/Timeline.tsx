@@ -18,7 +18,7 @@ export const Timeline: React.FC<TimelineIProps> = (props) => {
     <UnorderedList position="relative" h="100%">
       <Box
         position="absolute"
-        ml="-6"
+        ml="-5"
         w="10px"
         h="100%"
         borderRight="1.5px solid white"
