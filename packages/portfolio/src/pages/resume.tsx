@@ -136,7 +136,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
             flexDirection="column"
             justifyContent="space-between"
           >
-            <Flex w="100%" height="25%" justifyContent="space-between">
+            <Flex w="100%" height="27%" justifyContent="space-between">
               <Flex
                 flexDirection="column"
                 {...BlueCardBoxStyle}
@@ -235,7 +235,7 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   <br />
                   <b>Certifications:</b>
                     <br/>
-                    - BSB40215 Certificate IV in Business (Navitas Professional)
+                    -BSB40215 Certificate IV in Business (Navitas Professional)
                     <br/>
                     -Pearson Test of English (Overall Score of 90)
                   <br />
