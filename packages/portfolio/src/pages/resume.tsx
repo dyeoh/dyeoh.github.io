@@ -189,31 +189,31 @@ const ResumePage: React.FC<ResumePageData> = (props) => {
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Node.js
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={77} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={83} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     CSS
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={65} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={75} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Java
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={65} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={73} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     SQL
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={60} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={65} />
                 </Flex>
                 <Flex w="100%" alignItems="center">
                   <Text variant="bodySm" color="white" w="30%" opacity={0.8}>
                     Solidity
                   </Text>
-                  <Progress w="70%" colorScheme="orange" size="xs" value={55} />
+                  <Progress w="70%" colorScheme="orange" size="xs" value={60} />
                 </Flex>
                 <Text variant="title" color="primaryOrange" mt="4px">
                   others
